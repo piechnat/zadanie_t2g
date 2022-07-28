@@ -1,0 +1,64 @@
+$white: #ffffff;
+
+$theme-colors: (
+  "light": #e5dbcd,
+  "dark": #100c09,
+  "primary": #673b17,
+  "secondary": #ad623c,
+  "info": #d68d48,
+  "accent1": #554333,
+  "accent2": #976c38,
+  "accent3": #d4c8c2,
+  "success": #57a221,
+  "warning": #febf5c,
+  "danger": #ef1261,
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+div.counter {
+  display: flex;
+  width: 7em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 0.1em;
+  padding: 0.4em 0.5em;
+  background: rgb(236, 231, 227);
+  background: radial-gradient(
+    circle at 70%,
+    rgba(236, 231, 227, 1) 35%,
+    rgba(215, 193, 169, 1) 100%
+  );
+  > div.caption {
+    font-size: 0.4em;
+    font-weight: 700;
+    width: 4.5em;
+    text-align: center;
+  }
+  > div.digits {
+    margin: 0;
+    padding: 0 0.07em;
+    border: 0;
+    width: 1.8em;
+    height: 1.4em;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 1em;
+    background-image: url(./counter.png);
+    background-size: 1.8em 1.4em;
+    text-align: center;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1.66em;
+      background-image: url(./line.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 0.3em;
+      transform: translateY(-0.65em);
+    }
+  }
+}

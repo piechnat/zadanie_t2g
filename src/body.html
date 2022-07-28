@@ -1,0 +1,27 @@
+<h1 class="container-fluid my-5 p-5 display-3 fw-bold bg-primary text-center text-light shadow bg-gradient">
+  Licznik
+</h1>
+<div class="container my-5">
+  <div class="row gx-5">
+    <div class="col mb-5">
+      <p class="text-center">Wprowadź datę odliczania</p>
+      <form id="input-form" method="post">
+        <div class="input-group mx-auto" style="max-width: 30rem">
+          <input id="form-date" class="form-control" type="date" required="required">
+          <input id="form-time" class="form-control" type="time" required="required">
+          <button class="btn btn-secondary btn-lg" type="submit">Ustaw</button>
+        </div>
+      </form>
+    </div>
+    <div class="col d-flex justify-content-center p-5">
+      <div id="counter" class="counter display-1 rounded shadow">
+        <div class="digits">0</div>
+        <div class="digits">0</div>
+        <div class="digits">0</div>
+        <div class="caption"></div>
+        <div class="caption"></div>
+        <div class="caption"></div>
+      </div>
+    </div>
+  </div>
+</div>
