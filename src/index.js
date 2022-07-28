@@ -39,7 +39,7 @@ CounterEngine.setCountdownCallback((secondsLeft) => {
 });
 
 $("#input-form").on("submit", (e) => {
-  const selDateMs = new Date($formDate.val() + " " + $formTime.val()).getTime();
-  CounterEngine.setCountdownValue(Math.ceil((selDateMs - new Date().getTime()) / 1000));
+  const selectedDateMs = new Date($formDate.val() + " " + $formTime.val()).getTime();
+  CounterEngine.setCountdownTarget(Math.ceil((selectedDateMs - new Date().getTime()) / 1000));
   return false;
 });

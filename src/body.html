@@ -3,18 +3,24 @@
 </h1>
 <div class="container my-5">
   <div class="row gx-5">
-    <div class="col mb-5">
-      <p class="text-center">Wprowadź datę odliczania</p>
+    <div class="col-md-4 mb-5">
+      <h5 class="text-center mb-4">Wprowadź termin odliczania</h5>
       <form id="input-form" method="post">
-        <div class="input-group mx-auto" style="max-width: 30rem">
-          <input id="form-date" class="form-control" type="date" required="required">
-          <input id="form-time" class="form-control" type="time" required="required">
-          <button class="btn btn-secondary btn-lg" type="submit">Ustaw</button>
+        <div class="mb-3">
+          <label for="form-date">Data:</label>
+          <input type="date" class="form-control" id="form-date" required="required">
+        </div>
+        <div class="mb-4">
+          <label for="form-time">Godzina:</label>
+          <input type="time" class="form-control" id="form-time" required="required">
+        </div>
+        <div class="text-center">
+          <button class="btn btn-secondary" type="submit">Rozpocznij</button>
         </div>
       </form>
     </div>
-    <div class="col d-flex justify-content-center p-5">
-      <div id="counter" class="counter display-1 rounded shadow">
+    <div class="col-md-8">
+      <div id="counter" class="counter mx-auto display-1 rounded shadow">
         <div class="digits">0</div>
         <div class="digits">0</div>
         <div class="digits">0</div>
@@ -25,3 +31,7 @@
     </div>
   </div>
 </div>
+<hr>
+<p class="px-5 text-end small">
+  <a href="https://github.com/piechnat/zadanie_t2g">GitHub repository</a>
+</p>

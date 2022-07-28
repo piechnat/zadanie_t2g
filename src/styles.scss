@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
 $white: #ffffff;
 
 $theme-colors: (
@@ -17,6 +19,7 @@ $theme-colors: (
 @import "~bootstrap/scss/bootstrap";
 
 div.counter {
+  font-family: "Lato", sans-serif;
   display: flex;
   width: 7em;
   justify-content: space-between;
@@ -44,7 +47,7 @@ div.counter {
     display: inline-block;
     color: white;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.3;
     font-size: 1em;
     background-image: url(./counter.png);
     background-size: 1.8em 1.4em;
@@ -58,7 +61,7 @@ div.counter {
       background-size: contain;
       background-repeat: no-repeat;
       height: 0.3em;
-      transform: translateY(-0.65em);
+      transform: translateY(-0.74em);
     }
   }
 }
